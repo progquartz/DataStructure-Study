@@ -35,8 +35,8 @@ namespace Data_Structure
             tracking(cur + 1, selection);
             // 이번 인덱스를 고른 경우.
         }
-        //public void Solve()
-        static void Main(string[] args)
+        public void Solve()
+        //static void Main(string[] args)
         {
             while (true)
             {
