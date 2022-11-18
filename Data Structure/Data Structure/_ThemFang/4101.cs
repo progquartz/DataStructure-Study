@@ -10,7 +10,7 @@ namespace Data_Structure
     /// <summary>
     /// 현재 만들어놓은 
     /// </summary>
-    class Classics
+    class _4101
     {
         static StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
         public void Solve()
@@ -19,7 +19,27 @@ namespace Data_Structure
             StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
             // 만약 segfault오류나면 쓰지 말것.
             // 만약 Argumentnull오류가 난다면 이놈은 쓰지말것.
+            while (true)
+            {
+                
+                int[] input = Array.ConvertAll(sr.ReadLine().Split(), int.Parse);
 
+                int c = input[0];
+                int b = input[1];
+
+                if(c == 0 && b == 0)
+                {
+                    break;
+                }
+                if(c > b)
+                {
+                    sw.WriteLine("Yes");
+                }
+                else
+                {
+                    sw.WriteLine("No");
+                }
+            }
             sr.Close();
             sw.Close();
         }

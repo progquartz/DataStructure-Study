@@ -123,8 +123,8 @@ namespace Data_Structure
                 isVisited[i] = false;
             }
         }
-        //public void Solve()
-        static void Main(string[] args)
+        public void Solve()
+        //static void Main(string[] args)
         {
             StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput())); // 만약 segfault오류나면 쓰지 말것.
 

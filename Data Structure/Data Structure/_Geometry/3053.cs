@@ -10,7 +10,7 @@ namespace Data_Structure
     /// <summary>
     /// 현재 만들어놓은 
     /// </summary>
-    class Classics
+    class _3053
     {
         static StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
         public void Solve()
@@ -20,6 +20,13 @@ namespace Data_Structure
             // 만약 segfault오류나면 쓰지 말것.
             // 만약 Argumentnull오류가 난다면 이놈은 쓰지말것.
 
+            int n = int.Parse(sr.ReadLine());
+
+            double Circle = n * n * Math.PI;
+            double Euclid = n * n * 2;
+
+            Console.WriteLine("{0:F6}", Circle);
+            Console.WriteLine("{0:F6}", Euclid);
             sr.Close();
             sw.Close();
         }

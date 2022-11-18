@@ -10,7 +10,7 @@ namespace Data_Structure
     /// <summary>
     /// 현재 만들어놓은 
     /// </summary>
-    class Classics
+    class _2887
     {
         static StreamWriter sw = new StreamWriter(new BufferedStream(Console.OpenStandardOutput()));
         public void Solve()
